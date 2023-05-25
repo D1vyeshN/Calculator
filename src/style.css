@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap');
+*{
+  box-sizing:border-box;
+}
+.container{
+  padding-top:100px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  font-family: 'Share Tech Mono', monospace;
+}
+.grid{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "dis dis dis dis"
+    "AC C div times"
+    "seven eight nine minus"
+    "four five six plus"
+    "one two three equal"
+    "zero zero dot equal";
+  background-color: #000;
+  padding: 10px;
+  border-radius:2px;
+}
+.padButton{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding: 20px 40px;
+  background-color: #666666;
+  color: #fff;
+  border:1px solid black;
+  cursor:pointer;
+  font-size:20px;
+  border-radius:1px;
+}
+.padButton:hover{
+  color: #000;
+  border:1px solid #fff;
+}
+
+.dark-gray{
+  background-color: #4d4d4d;
+}
+.tomato{
+  background-color: #ac3939;
+}
+.blue{
+  background-color: #004466;
+}
+.zero{
+  grid-area:zero;
+}
+.equal{
+  grid-area:equal;
+}
+.dis{
+  grid-area:dis;
+  background-color: #000;
+  text-align:right;
+  font-size:20px;
+  color:#fff;
+}
+.dis input{
+  color: white;
+  width:100%;
+  background-color: #000;
+  padding: 5px 20px;
+  text-align:right;
+  border:none;
+  font-family: 'Share Tech Mono', monospace;
+  font-size:20px;
+}
+input::placeholder{
+  color:#fff;
+  font-family: 'Share Tech Mono', monospace;
+}
+.total{
+  padding: 5px 20px;
+  color:#fff;
+}
